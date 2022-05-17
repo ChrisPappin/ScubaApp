@@ -1,0 +1,4 @@
+__pycache__/
+scubaenv
+database.db
+website/__pycache__/
