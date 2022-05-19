@@ -23,7 +23,7 @@ def login():
         else:
             flash('Email does not exist.', category='danger')
 
-    return render_template("login.html")
+    return render_template("login.html", user=current_user)
 
 @auth.route('/logout')
 @login_required
@@ -60,4 +60,4 @@ def sign_up():
             
             
 
-    return render_template("signUp.html")
+    return render_template("signUp.html", user=current_user)
